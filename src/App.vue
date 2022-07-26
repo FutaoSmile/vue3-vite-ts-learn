@@ -4,11 +4,13 @@
 import HelloWorld from './components/HelloWorld.vue'
 import A from "./views/A.vue";
 import B from "./views/B.vue";
+import C2 from "./views/C2.vue";
 </script>
 
 <template>
 <!--  <A></A>-->
-  <B></B>
+<!--  <B></B>-->
+  <C2></C2>
 </template>
 
 <style scoped>

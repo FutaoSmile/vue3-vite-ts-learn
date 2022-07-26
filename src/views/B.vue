@@ -1,5 +1,5 @@
 <template>
-  <h1>reactive</h1>
+  <h1>reactive的使用</h1>
   {{ user }}
   <button @click="addWife">再来一房</button>
 
