@@ -2,12 +2,13 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
-import A from "./views/A.vue";
-import B from "./views/B.vue";
-import C2 from "./views/C2.vue";
-import D from "./views/D.vue";
-import E from "./views/E.vue";
-import F from "./views/F.vue";
+import A from "./views/atguigu/A.vue";
+import B from "./views/atguigu/B.vue";
+import C2 from "./views/atguigu/C2.vue";
+import D from "./views/atguigu/D.vue";
+import E from "./views/atguigu/E.vue";
+import F from "./views/atguigu/F.vue";
+import G from "./views/atguigu/G.vue";
 </script>
 
 <template>
@@ -15,7 +16,8 @@ import F from "./views/F.vue";
 <!--  <B></B>-->
 <!--  <C2></C2>-->
 <!--  <E></E>-->
-  <F></F>
+<!--  <F></F>-->
+  <G></G>
 </template>
 
 <style scoped>
