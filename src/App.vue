@@ -6,13 +6,16 @@ import A from "./views/A.vue";
 import B from "./views/B.vue";
 import C2 from "./views/C2.vue";
 import D from "./views/D.vue";
+import E from "./views/E.vue";
+import F from "./views/F.vue";
 </script>
 
 <template>
 <!--  <A></A>-->
 <!--  <B></B>-->
 <!--  <C2></C2>-->
-  <D></D>
+<!--  <E></E>-->
+  <F></F>
 </template>
 
 <style scoped>
