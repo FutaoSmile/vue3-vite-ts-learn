@@ -1,9 +1,17 @@
 <template>
   <h1>customRef实现input输入防抖</h1>
+  <input v-model="inputValue">
+  <input v-model="inputValue">
+  <ul>
+    <li v-for="watch in watchValues">
+      {{ watch }}
+    </li>
+  </ul>
 </template>
 
 <script lang="ts">
-import {defineComponent, customRef, reactive, ref} from "vue";
+import {defineComponent, customRef, reactive, ref, watch} from "vue";
+import {useDebouncedRef} from "./useDebouncedRef";
 
 export default defineComponent({
   // 可以通过父组件传递过来的值
@@ -20,7 +28,16 @@ export default defineComponent({
    * @param expose
    */
   setup(props, {attrs, slots, emit, expose}) {
-    return {}
+    const inputValue = useDebouncedRef(null, 1000);
+    const watchValues = ref<Array<string>>([])
+    // 防抖之后监听，可以再调接口啥的
+    watch(inputValue, (newValue) => {
+      watchValues.value.push(newValue)
+    })
+    return {
+      inputValue,
+      watchValues
+    }
   }
 })
 

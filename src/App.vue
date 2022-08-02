@@ -9,6 +9,7 @@ import D from "./views/atguigu/D.vue";
 import E from "./views/atguigu/E.vue";
 import F from "./views/atguigu/F.vue";
 import G from "./views/atguigu/G.vue";
+import H from "./views/atguigu/H.vue";
 </script>
 
 <template>
@@ -17,7 +18,8 @@ import G from "./views/atguigu/G.vue";
 <!--  <C2></C2>-->
 <!--  <E></E>-->
 <!--  <F></F>-->
-  <G></G>
+<!--  <G></G>-->
+  <H></H>
 </template>
 
 <style scoped>
